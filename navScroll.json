@@ -1,0 +1,29 @@
+{
+	"name": "navScroll",
+	"title": "navScroll Plugin",
+	"description": "A plugin to help scrolling and sticker headers",
+	"keywords": [
+		"jquery",
+		"scrolling",
+		"plugins"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Matthew Brennan",
+		"email": "mdbrennan@yahoo.com",
+		"url": "https://github.com/mdbrennan"
+	},	
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	],
+	"bugs": "https://github.com/mdbrennan/navScroll/issues",
+	"homepage": "http://github.com/mdbrennan/navScroll/",
+	"docs": "http://github.com/mdbrennan/navScroll/",
+	"download": "https://github.com/mdbrennan/rnavScroll/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=11.11.1"
+	}
+}

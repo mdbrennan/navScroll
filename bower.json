@@ -1,0 +1,16 @@
+{
+	"name": "navScroll",
+	"version": "1.0.0",
+	"homepage": "http://github.com/mdbrennan/navScroll",
+	"authors": [
+		"https://github.com/mdbrennan"
+	],
+	"description": "Scrolling Plugin for jquery",
+	"main": "src/navScroll.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"scrolling"
+	],
+	"license": "MIT"
+}

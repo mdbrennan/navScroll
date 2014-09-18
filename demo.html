@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="static/css/screen.css" media="screen">
+
+        <script src="js/lib/modernizr.min.js"></script>
+
+
+        
+    </head>
+    <body>
+        
+        <header>  
+            <h1>Title</h1>
+        <!-- Header content -->
+        </header>
+       
+        <main role="main">
+        <!-- Page content -->
+            <!-- intro -->
+            <section data-section="intro" id="intro">
+                <h2>Intro</h2>
+            </section>
+
+            <!-- education -->
+            <section data-section="education" id="education">
+                <h2>Edu</h2>
+            </section>
+
+            <!-- history -->
+            <section data-section="history" id="history">
+                <h2>History</h2>
+            </section>
+
+            <!-- skills -->
+            <section data-section="skills" id="skills">
+                <h2>Skills</h2>
+            </section>
+
+            <!-- references -->
+            <section data-section="references" id="references">
+                <h2>Refs</h2>
+            </section>
+
+            <!-- notes -->
+            <section data-section="notes" id="notes">
+                <h2>Notes</h2>
+            </section>
+        </main>
+        
+        <aside role="complementary">
+        <!-- Secondary content -->
+            <nav>
+                <ul>
+                    <li data-section-nav="intro">
+                        <a href="#intro">Intro</a>
+                    </li>
+                    <li data-section-nav="education" >
+                        <a href="#education">education</a>
+                    </li>
+                    <li data-section-nav="history" >
+                        <a href="#history">history</a>
+                    </li>
+                    <li data-section-nav="skills" >
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li data-section-nav="references" >
+                        <a href="#references">References</a>
+                    </li>
+                    <li data-section-nav="notes" >
+                        <a href="#notes">Notes</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <footer>
+        <!-- Footer content -->
+        </footer>
+
+
+       <script src="js/lib/jquery-1.11.0.js"></script>
+       <script src="js/lib/jquery.ui.core.js"></script>
+       <script src="js/lib/jquery.ui.widget.js"></script>
+
+		<script>
+	       $(function(){	       		
+	    		console.log($('[data-section-nav]'));
+	    		$('[data-section-nav]').navScroll();
+	   		})
+       </script>
+       
+    </body>
+</html>
