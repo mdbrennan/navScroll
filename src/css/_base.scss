@@ -1,8 +1,45 @@
-/*BASE*/
-h1{
-	font-size:18px;
-}
+/* sections */
+section[data-scroll-section]{
+	@include clearfix();	
+	position:relative;	
+	h2{
+		height:75px;
+		line-height: 75px;		
+		box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.4);
+		width:100%;
+		text-transform: capitalize;
+		padding:0px 40px;
+	}
+	.post-content{
+		padding:20px 40px;
+		min-height: 500px;
+	}
+	@include respond-to(desktop){
+		&.scroll-active{		
+			h2{
+				position:fixed;
+				top:0px;			
+				width:100%;
+			}
 
-section{
-	height:500px;
+		}
+	}
+	@include respond-to(tablet){			
+		h2{
+			@include stickyicky();
+			top:0px;			
+			width:100%;
+		}
+
+		
+	}
+	@include respond-to(mobile){		
+		h2{
+			@include stickyicky();
+			top:0px;			
+			width:100%;
+		}
+		
+	}
+	
 }

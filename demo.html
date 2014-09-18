@@ -7,9 +7,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="static/css/screen.css" media="screen">
+        <link rel="stylesheet" href="dist/css/nav.scroll.css" media="screen">
+        <link rel="stylesheet" href="dist/css/demo.css" media="screen">
 
-        <script src="js/lib/modernizr.min.js"></script>
+        <script src="src/js/lib/modernizr.js"></script>
 
 
         
@@ -24,33 +25,67 @@
         <main role="main">
         <!-- Page content -->
             <!-- intro -->
-            <section data-section="intro" id="intro">
-                <h2>Intro</h2>
+            <section data-scroll-section="introduction" id="introduction" class="panel">
+                
+                <h2>Introduction</h2>
+                
+               <div class="post-content">
+                   
+                </div> 
+
             </section>
 
             <!-- education -->
-            <section data-section="education" id="education">
-                <h2>Edu</h2>
+            <section data-scroll-section="education" id="education" class="panel">
+                <h2>Education</h2>
+                
+                <div class="post-content">
+
+                    
+
+                </div>
+
             </section>
 
             <!-- history -->
-            <section data-section="history" id="history">
+            <section data-scroll-section="history" id="history" class="panel">
+                                
                 <h2>History</h2>
+                
+                <div class="post-content">
+
+                    
+                </div>
             </section>
 
             <!-- skills -->
-            <section data-section="skills" id="skills">
-                <h2>Skills</h2>
+            <section data-scroll-section="skills" id="skills" class="panel">
+                
+                <h2 >Key Skills</h2>
+
+                <div class="post-content">
+                   
+                </div>
+
             </section>
 
             <!-- references -->
-            <section data-section="references" id="references">
-                <h2>Refs</h2>
+            <section data-scroll-section="references" id="references" class="panel">
+                <h2>References</h2>
+                <div class="post-content">
+                    
+                </div>
             </section>
 
             <!-- notes -->
-            <section data-section="notes" id="notes">
-                <h2>Notes</h2>
+            <section data-scroll-section="about" id="about" >
+                
+                <h2>About</h2>
+                
+                <div class="post-content">
+                    
+                </div>
+                
             </section>
         </main>
         
@@ -58,23 +93,23 @@
         <!-- Secondary content -->
             <nav>
                 <ul>
-                    <li data-section-nav="intro">
-                        <a href="#intro">Intro</a>
+                    <li data-scroll-nav="introduction">
+                        <a href="#introduction">Intro</a>
                     </li>
-                    <li data-section-nav="education" >
+                    <li data-scroll-nav="education" >
                         <a href="#education">education</a>
                     </li>
-                    <li data-section-nav="history" >
+                    <li data-scroll-nav="history" >
                         <a href="#history">history</a>
                     </li>
-                    <li data-section-nav="skills" >
+                    <li data-scroll-nav="skills" >
                         <a href="#skills">Skills</a>
                     </li>
-                    <li data-section-nav="references" >
+                    <li data-scroll-nav="references" >
                         <a href="#references">References</a>
                     </li>
-                    <li data-section-nav="notes" >
-                        <a href="#notes">Notes</a>
+                    <li data-scroll-nav="about" >
+                        <a href="#about">About</a>
                     </li>
                 </ul>
             </nav>
@@ -82,17 +117,24 @@
 
         <footer>
         <!-- Footer content -->
+            <h2>Title</h2>
         </footer>
 
 
-       <script src="js/lib/jquery-1.11.0.js"></script>
-       <script src="js/lib/jquery.ui.core.js"></script>
-       <script src="js/lib/jquery.ui.widget.js"></script>
+       <script src="src/js/lib/jquery-1.11.0.js"></script>
+       <script src="src/js/lib/jquery.ui.core.js"></script>
+       <script src="src/js/lib/jquery.ui.effect.js"></script>
+       <script src="src/js/lib/jquery.ui.widget.js"></script>
+
+        <!-- plugin -->
+       <script src="dist/js/nav.scroll.min.js"></script>
 
 		<script>
 	       $(function(){	       		
 	    		console.log($('[data-section-nav]'));
-	    		$('[data-section-nav]').navScroll();
+	    		if (!Modernizr.touch) { 
+                    $('[data-scroll-nav]').navScroll({header:75});
+                }  
 	   		})
        </script>
        

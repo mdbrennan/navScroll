@@ -6,7 +6,7 @@
 		"https://github.com/mdbrennan"
 	],
 	"description": "Scrolling Plugin for jquery",
-	"main": "src/navScroll.js",
+	"main": "dist/nav.scroll.js",
 	"keywords": [
 		"jquery",
 		"plugin",

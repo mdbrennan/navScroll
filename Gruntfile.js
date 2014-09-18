@@ -20,8 +20,8 @@ module.exports = function(grunt) {
 		// Concat definitions
 		concat: {
 			dist: {
-				src: ["src/js/*.js"],
-				dest: "dist/js/nanScroll.js"
+				src: ["src/js/plugins/*.js"],
+				dest: "dist/js/nav.scroll.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
 		// Minify definitions
 		uglify: {
 			my_target: {
-				src: ["dist/js/navScroll.js"],
-				dest: "dist/js/navScroll.min.js"
+				src: ["dist/js/nav.scroll.js"],
+				dest: "dist/js/nav.scroll.min.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"

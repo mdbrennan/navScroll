@@ -1,0 +1,33 @@
+/* sidebar */
+
+aside{
+	position:fixed;
+	width:250px;
+	right:10px;
+	top:10px;
+	padding:20px;
+	box-shadow:0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+	z-index:10;
+	background-color:$sidebar-bg;
+	li{
+		display:block;
+		padding:10px;
+		font-size:$text-large;
+	}
+	li.scroll-active{
+		background-color:#ffcc00;
+		a{
+			font-weight:bold;
+			text-transform: capitalize;
+
+		}
+	}
+}
+
+
+@include respond-to(mobile){
+	aside{
+		display:none;
+	}
+}
+

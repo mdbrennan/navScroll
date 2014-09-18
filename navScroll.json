@@ -24,6 +24,6 @@
 	"docs": "http://github.com/mdbrennan/navScroll/",
 	"download": "https://github.com/mdbrennan/rnavScroll/archive/master.zip",
 	"dependencies": {
-		"jquery": ">=11.11.1"
+		"jquery": ">=1.11.1"
 	}
 }
