@@ -20,8 +20,8 @@ module.exports = function(grunt) {
 		// Concat definitions
 		concat: {
 			dist: {
-				src: ["src/js/plugins/*.js"],
-				dest: "dist/js/nav.scroll.js"
+				src: ["src/js/plugins/jquery.nav.scroll.js"],
+				dest: "dist/js/jquery.nav.scroll.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 		        sassDir: 'src/css',
 		        cssDir: 'dist/css',
 		        environment: 'production',
-		        outputStyle:'compressed',
+		        outputStyle:'expanded',
 		        imagesDir:'src/images/',
 		      }
 		    }		    
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
 		// Minify definitions
 		uglify: {
 			my_target: {
-				src: ["dist/js/nav.scroll.js"],
-				dest: "dist/js/nav.scroll.min.js"
+				src: ["dist/js/jquery.nav.scroll.js"],
+				dest: "dist/js/jquery.nav.scroll.min.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"

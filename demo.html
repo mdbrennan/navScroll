@@ -122,18 +122,15 @@
 
 
        <script src="src/js/lib/jquery-1.11.0.js"></script>
-       <script src="src/js/lib/jquery.ui.core.js"></script>
-       <script src="src/js/lib/jquery.ui.effect.js"></script>
-       <script src="src/js/lib/jquery.ui.widget.js"></script>
+       <script src="src/js/lib/jquery.easing.1.3.js"></script>       
 
         <!-- plugin -->
-       <script src="dist/js/nav.scroll.min.js"></script>
+       <script src="dist/js/jquery.nav.scroll.js"></script>
 
 		<script>
-	       $(function(){	       		
-	    		console.log($('[data-section-nav]'));
+	       $(function(){	       			    		
 	    		if (!Modernizr.touch) { 
-                    $('[data-scroll-nav]').navScroll({header:75});
+                    $(document).navScroll({selectorNav:'data-scroll-nav',header:75});
                 }  
 	   		})
        </script>
